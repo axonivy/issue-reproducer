@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+  <Appenders>
+    <Console name="ConsoleLog">
+      <ThresholdFilter level="debug" />
+    </Console>
+  </Appenders>
+  <Loggers>
+    <!-- Async Rest Server-Side Stack of Ivy -->
+    <Logger name="ch.ivyteam.ivy.webserver.internal.rest.IvyRestRequestScope" level="warn" />
+
+    <!-- Session Events of Ivy -->
+    <Logger name="ch.ivyteam.ivy.security.internal.session.SessionEventLogger" level="debug" />
+  </Loggers>
+</Configuration>
